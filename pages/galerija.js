@@ -2,7 +2,6 @@ import Navbar from '/components/Navbar.jsx'
 import Header from '/components/header.js'
 import Footer from '/components/footer.js'
 import Head from 'next/head'
-import Image from 'next/image'
 
 export default function Oskoli() {
     return(
