@@ -9,11 +9,30 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.3",
+    "@heroicons/react": "^2.0.12",
+    "@ionic/core": "^6.5.2",
+    "@nextui-org/react": "^1.0.0-beta.12",
+    "carousel": "^0.0.3",
+    "graphql": "^16.6.0",
+    "graphql-request": "^5.1.0",
+    "ionicons": "^6.1.1",
+    "layout": "^2.2.0",
+    "moment": "^2.29.4",
     "next": "12.3.1",
+    "ra-data-graphql": "^4.6.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-experiments": "^5.1.0",
+    "react-ionicons": "^4.2.0",
+    "react-multilevel-dropdown": "^3.0.3",
+    "react-transition-group": "^4.4.5",
+    "slider": "^1.0.4",
+    "swiper": "^8.4.6",
+    "tw-elements": "^1.0.0-alpha13"
   },
   "devDependencies": {
+    "@svgr/webpack": "^6.5.1",
     "autoprefixer": "^10.4.12",
     "eslint": "8.26.0",
     "eslint-config-next": "12.3.1",
