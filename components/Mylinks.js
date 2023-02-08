@@ -1,4 +1,5 @@
 export const links = [
+
     {
       name: "О школи",
       link: "/",
@@ -7,43 +8,30 @@ export const links = [
         {
           Head: "",
           sublink: [
-            { name: "Основни подаци", link: "http://localhost:3000/oskoli" },
+            { name: "Основни подаци", link: "/oskoli" },
             
           ],
         },
         {
           Head: "",
           sublink: [
-            { name: "Мисија и визија школе", link: "/" },
+            { name: "Мисија и визија школе", link: "/misija" },
            
           ],
         },
         {
           Head: "",
           sublink: [
-            { name: "О Вуку Караџићу", link: "/" },
+            { name: "О Вуку Караџићу", link: "/vuk" },
             
           ],
         },
   
+   
         {
           Head: "",
           sublink: [
-            { name: "Савјет родитеља", link: "/" },
-           
-          ],
-        },
-        {
-          Head: "",
-          sublink: [
-            { name: "Школски одбор", link: "/" },
-            
-          ],
-        },
-        {
-          Head: "",
-          sublink: [
-            { name: "Постигнућа", link: "/" },
+            { name: "Постигнућа", link: "/postignuca" },
            
           ],
         },
@@ -56,18 +44,55 @@ export const links = [
         {
           Head: "",
           sublink: [
-            { name: "Обавјештења", link: "/" },
+            { name: "Обавјештења", link: "/nedovrsene" },
            
           ],
         },
         {
           Head: "",
           sublink: [
-            { name: "Наставничка вијећа", link: "/" },
+            { name: "Наставничка вијећа", link: "/nedovrsene" },
             
           ],
         },
         
+      ],
+    },
+    {
+      name: "Настава",
+      link: "/",
+      submenu: true,
+      sublinks: [
+        {
+          Head: "",
+          sublink: [
+            { name: "Школски календар", link: "/nedovrsene" },
+            
+          ],
+        },
+        {
+          Head: "",
+          sublink: [
+            { name: "Распоред часова", link: "/nedovrsene" },
+           
+          ],
+        },
+        {
+          Head: "",
+          sublink: [
+            { name: "Распоред дежурства наставника", link: "/nedovrsene" },
+            
+          ],
+        },
+  
+   
+        {
+          Head: "",
+          sublink: [
+            { name: "Ванредна настава", link: "/nedovrsene" },
+           
+          ],
+        },
       ],
     },
     {
@@ -77,21 +102,21 @@ export const links = [
         {
           Head: "",
           sublink: [
-            { name: "Завирите у нашу галерију", link: "/" },
+            { name: "Завирите у нашу галерију", link: "/galerija" },
             
           ],
         },
         {
           Head: "",
           sublink: [
-            { name: "Завирите у нашу библиотеку", link: "/" },
+            { name: "Завирите у нашу библиотеку", link: "/nedovrsene" },
            
           ],
         },
         {
           Head: "",
           sublink: [
-            { name: "Креативни радови дијеце", link: "/" },
+            { name: "Креативни радови дијеце", link: "/nedovrsene" },
            
           ],
         },

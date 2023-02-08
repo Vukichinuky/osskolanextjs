@@ -1,7 +1,7 @@
 import { GraphQLClient, gql } from "graphql-request";
 import styles from "../../styles/Slug.module.css";
 import moment from "moment";
-import Navall from '/components/navall.js'
+import Navbar from '/components/Navbar.jsx'
 import Header from '/components/header.js'
 import Footer from '/components/footer.js'
 
@@ -68,10 +68,10 @@ export default function BlogPost({ post }) {
 <nav>
 <Header />
 
-    <Navall />
+    <Navbar />
 </nav>
 
-   <div className="sm:flex sm:justify-center sm:items-center sm:flex-col ">
+   <div className="sm:flex sm:justify-center  max-w-6xl m-auto sm:items-center sm:flex-col ">
              <div className="sm:flex sm:flex-col  sm:justify-evenly sm:mt-20">
                  <img
                         className=' m-auto sm:rounded-2xl sm:shadow-2xl '
@@ -91,7 +91,7 @@ export default function BlogPost({ post }) {
        </div>
        
              </div>
-             <div><h2 className="text-center text-xl m-10  sm:text-3xl">{post.title}</h2></div>
+             <div><h2 className="text-center text-xl m-10  max-w-6xl m-auto sm:text-3xl">{post.title}</h2></div>
 
              <div
              

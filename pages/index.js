@@ -14,8 +14,6 @@ import { Navigation } from "swiper";
 import { Autoplay } from "swiper"; 
 import { Pagination } from "swiper";
 import Navbar from '/components/Navbar.jsx'
-import Navig from '../components/nav'
-import Naviall from '../components/navall'
 
 
 
@@ -89,24 +87,24 @@ export default function Home({posts}) {
  <Link href="https://e-dnevnik.edu.ba/Account/Login?ReturnUrl=%2F" title="">
   <div className=' text-white shadow-2xl  circle relative xl:-top-32 sm:-top-20 mt-5 sm:w-48 sm:h-48 xl:w-96 xl:h-96 w-64 h-64 rounded-full grid place-items-center'>
   <img className=' opacity-80 xl:h-72 sm:h-36 h-48   ' src='/student-cap-svgrepo-com.svg' alt='next' />
-  <h1 className='mb-10 opacity-70 sm:text-sm '>еДневник за ученике</h1>
+  <h1 className='mb-10 opacity-70 text-center text-sm font-bold sm:text-xl '>еДневник <br /> за ученике</h1>
   </div>
   </Link>
 
   <Link href="https://e-dnevnik.edu.ba/Account/Login?ReturnUrl=%2F" title="">
   <div className=' text-white  shadow-2xl circle relative xl:-top-32 sm:-top-20 w-64 max-xl:mt-5 sm:w-48 sm:h-48  h-64 xl:w-96 xl:h-96 rounded-full grid place-items-center'>
     <img className=' opacity-70 xl:h-72 sm:h-36 h-48   ' src="family-silhouette-svgrepo-com.svg" alt="" />
-    <h1 className='mb-10 opacity-70 sm:text-sm '>еДневник за родитеље</h1>
+    <h1 className='mb-10 opacity-70 text-sm font-bold sm:text-xl text-center '>еДневник <br /> за родитеље</h1>
   </div>
   </Link>
 
   <Link href="https://e-dnevnik.edu.ba/Account/Login?ReturnUrl=%2F" title="">
-  <div  className='text-white  shadow-2xl circle relative xl:-top-32 w-64 max-xl:mt-5 sm:-top-20 sm:w-48 sm:h-48 h-64 xl:w-96 xl:h-96 rounded-full grid place-items-center'>
-    <img className=' opacity-70 xl:h-72 sm:h-36 h-48   '  src="business-person-silhouette-wearing-tie-svgrepo-com.svg" alt="" />
-    <h1 href="https://e-dnevnik.edu.ba/Account/Login?ReturnUrl=%2F" className='mb-20 sm:text-sm opacity-70 '>еДневник за наставнике
+  <div  className='text-white  shadow-2xl circle relative xl:-top-32 w-64 max-xl:mt-5 sm:-top-20 sm:w-48 sm:h-48 h-64 xl:w-96 xl:h-96  rounded-full grid place-items-center'>
+    <img className=' opacity-70 mt-1 md:mt-4 xl:h-72 sm:h-36 h-48   '  src="business-person-silhouette-wearing-tie-svgrepo-com.svg" alt="" />
+    <h1 href="https://e-dnevnik.edu.ba/Account/Login?ReturnUrl=%2F" className='mb-20 text-center font-bold text-sm sm:text-xl opacity-70 '>еДневник <br /> за наставнике
     </h1>
     
-    
+
   </div>
   </Link>
  </div>
@@ -118,7 +116,7 @@ export default function Home({posts}) {
 </section>
 
 <section>
-  <h1 className=' text-center m-20  text-3xl sm:text-7xl ' >Новости</h1>
+  <h1 className=' text-center m-20 font-bold text-amber-400  text-3xl sm:text-7xl ' >Новости</h1>
 <div className={styles.container}>
 {posts.map((post) =>(
   <BlogCard title={post.title} 
@@ -129,18 +127,23 @@ export default function Home({posts}) {
   content={post.content}
   slug={post.slug}/>
 ))}
+
 </div>
 </section>
 
+<div className=' bg-amber-400 w-48 text-white  flex justify-center m-auto shadow-2xl p-4  rounded-3xl mt-3 decoration-white'>
+  <Link className='text-white' style={{ textDecoration: 'none' }} href={'/novosti'}>
+      Сва обавјештења</Link>
+</div>
 
 <section>
 <>
             <Swiper slidesPerView={2}
   autoplay={{
-    delay: 1000,
+    delay: 500,
     disableOnInteraction: false,
   }}
-  speed={1000}
+  speed={5000}
   loop={true}
   pagination={{
   clickable: true,
@@ -216,7 +219,7 @@ export default function Home({posts}) {
     delay: 500,
     disableOnInteraction: false,
   }}
-  speed={100}
+  speed={5000}
   loop={true}
   pagination={{
   clickable: true,

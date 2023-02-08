@@ -17,8 +17,13 @@ const Navbar = () => {
 
           </div>
         </div>
-        <ul className="md:flex hidden flex-col mt-10 uppercase items-start gap-8 ">
-          
+        <ul className="md:flex hidden flex-col mt-10 uppercase items-start gap-1 ">
+        <li>
+            <Link href="/" className="py-7 px-3 inline-block">
+             <p className=" bg-zinc-700 text-slate-400 hover:bg-yellow-500 hover:text-white cursor-pointer  rounded-3xl md:py-4   p-2 px-8
+               my-1 mt-3 md:mx-10 ">почетнa</p>
+            </Link>
+          </li>
           <NavLinks />
         </ul>
         <div className="md:block hidden">
@@ -26,11 +31,16 @@ const Navbar = () => {
          {/* Mobile nav */}
          <ul
           className={`
-        md:hidden bg-white fixed-top w-full z-40 bottom-0 p-24 pl-4
+        md:hidden bg-white uppercase fixed-top w-full z-40 bottom-0 p-24 pl-4
         duration-500 ${open ? "left-0" : "left-[-100%]"}
         `}
         >
-         
+             <li>
+            <Link href="/" className=" ">
+             <p className="  text-zinc-800   font-bold uppercase rounded-3xl md:py-4   p-2 px-8
+               my-1 mt-3 md:mx-10">почетнa</p>
+            </Link>
+          </li>
           <NavLinks />
           <div className="py-5">
           </div>

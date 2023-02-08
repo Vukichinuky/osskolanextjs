@@ -9,9 +9,9 @@ const NavLinks = () => {
     <>
       {links.map((link) => (
         <div>
-          <div className=" flex  items-center text-left md:cursor-pointer group">
+          <div className=" flex  justify-center align-middle items-center text-left md:cursor-pointer group">
             <h1
-              className=" bg-zinc-700 text-white rounded-3xl md:py-4   p-2 px-8
+              className=" bg-zinc-700  hover:bg-yellow-500 hover:text-white text-slate-400  rounded-3xl md:py-4   p-2 px-8
                my-1 mt-3 md:mx-10  group"
               onClick={() => {
                 heading !== link.name ? setHeading(link.name) : setHeading("");
@@ -36,14 +36,14 @@ const NavLinks = () => {
                     
                     {link.sublinks.map((mysublinks) => (
                       <div>
-                        <h1 className="text-xs py-3 px-1 m-1 text-white  rounded-3xl  font-semibold">
+                        <h1 className="text-xs py-3 px-1 m-1  rounded-3xl  font-light">
                           {mysublinks.Head}
                         </h1>
                         {mysublinks.sublink.map((slink) => (
-                          <li className="text-base text-white z-50 bg-slate-600 py-3 px-1 m-1 rounded-3xl">
+                          <li className="    text-slate-400 hover:bg-yellow-500 hover:text-white z-50 bg-zinc-700 py-4 px-5 mx-3 mb-4 rounded-3xl">
                             <Link
                               href={slink.link}
-                              className="hover:text-primary"
+                              className=" hover:text-primary"
                             >
                               {slink.name}
                             </Link>
@@ -72,11 +72,11 @@ const NavLinks = () => {
                         ? setSubHeading(slinks.Head)
                         : setSubHeading("")
                     }
-                    className="py-4 pl-7 font-semibold md:pr-0 pr-5 flex justify-between items-center md:pr-0 pr-5"
+                    className="py-4 pl-7 font-semibold  md:pr-0 pr-5 flex justify-between items-center md:pr-0 pr-5"
                   >
                     {slinks.Head}
 
-                    <span className="text-xl md:mt-1 md:ml-2 inline">
+                    <span className="text-xl md:mt-1  md:ml-2 inline">
                       <ion-icon
                         name={`${
                           subHeading === slinks.Head
@@ -92,7 +92,7 @@ const NavLinks = () => {
                     }`}
                   >
                     {slinks.sublink.map((slink) => (
-                      <li className="py-3 pl-14">
+                      <li className="py-3   pl-14">
                         <Link href={slink.link} >{slink.name}</Link>
                       </li>
                     ))}
