@@ -15,7 +15,6 @@
     "@nextui-org/react": "^1.0.0-beta.12",
     "@react-icons/all-files": "^4.1.0",
     "carousel": "^0.0.3",
-    "core-js": "^3.27.2",
     "graphql": "^16.6.0",
     "graphql-request": "^5.1.0",
     "ionicons": "^6.1.1",
