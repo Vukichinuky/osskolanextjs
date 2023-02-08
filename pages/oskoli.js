@@ -20,7 +20,7 @@ export default function Oskoli() {
  <div className=''> 
  <img className=' h-full max-md:hidden -top-22 md:-top-28 opacity-20 w-full  absolute md:h-fit
    -z-30  md:object-cover' fill src="/Image (7).jpeg" alt="" />
-      <div className=' text-center mt-28 text-justify  max-w-6xl m-auto relative   z-10 '>
+      <div className='  mt-28 text-justify  max-w-6xl m-auto relative   z-10 '>
      
             <h1 className=' text-xl  text-center sm:text-2xl'>Основни подаци о школи</h1>
             <p className='m-4 text-m sm:text-xl'>Карактеристике заједнице у којој се налази школа</p>
